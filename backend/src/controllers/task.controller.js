@@ -3,7 +3,7 @@ const Project = require('../models/Project');
 
 exports.getTasks = async (req, res, next) => {
     try {
-        const project = await Project.findById(req.params.id);
+        const project = await Project.findById(req.params.projectId);
 
         if (!project) {
             res.status(404);
