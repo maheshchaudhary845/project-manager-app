@@ -3,7 +3,7 @@ const Task = require('../models/Task');
 
 exports.getProjects = async(req, res, next)=>{
     try{
-        const projects = await Project.findOne({owner: req.user._id}).sort({createdAt: -1});
+        const projects = await Project.find({owner: req.user._id}).sort({createdAt: -1});
         res.json(projects)
     }catch(err){
         next(err);
