@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getTasksAPI, createTaskAPI } from '../api/task.api';
-import TaskCard from '../components/Taskcard';
+import TaskCard from '../components/TaskCard';
 import Navbar from '../components/Navbar';
 import Button from '../components/Button';
 import Input from '../components/Input';
